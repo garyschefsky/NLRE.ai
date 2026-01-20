@@ -5,11 +5,10 @@ import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 
 const navItems = [
-  { href: '/', label: 'Home' },
   { href: '/what-we-do', label: 'What We Do' },
   { href: '/our-team', label: 'Our Team' },
-  { href: '/clients-we-serve', label: 'Clients' },
-  { href: '/projects', label: 'Portfolio' },
+  { href: '/clients-we-serve', label: 'Clients We Serve' },
+  { href: '/projects', label: 'Projects/OM', hidden: true },
   { href: '/connect', label: 'Connect' },
 ]
 
@@ -41,7 +40,7 @@ export default function Navigation() {
           
           {/* Navigation Links on Right */}
           <div className="flex space-x-6 lg:space-x-8">
-            {navItems.map((item) => {
+            {navItems.filter(item => !item.hidden).map((item) => {
               const isActive = pathname === item.href
               return (
                 <Link

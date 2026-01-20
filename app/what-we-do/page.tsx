@@ -58,13 +58,9 @@ export default function WhatWeDo() {
               <h3 className="text-xl lg:text-2xl font-bold mb-6 text-black">Development, & Project Management</h3>
               <ul className="space-y-3 text-lg text-gray-700">
                 <li>• Assemble and manage integrated team</li>
-                <li className="ml-4">
-                  <ul className="list-disc space-y-2">
-                    <li>conceptual design, design development, construction drawings</li>
-                    <li>construction management</li>
-                    <li>controller financial oversights</li>
-                  </ul>
-                </li>
+                <li>• conceptual design, design development, construction drawings</li>
+                <li>• construction management</li>
+                <li>• controller financial oversights</li>
               </ul>
             </div>
           </div>

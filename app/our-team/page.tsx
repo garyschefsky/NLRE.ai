@@ -13,15 +13,15 @@ export default function OurTeam() {
           
           <div className="max-w-5xl mb-16 space-y-8">
             <p className="text-xl lg:text-2xl leading-relaxed text-gray-800">
-              Our team operates with unwavering commitment and utmost discretion for clients.
+              Our exemplary team operates with an unwavering commitment to our clients, ensuring matters are handled with the utmost discretion.
             </p>
             
             <p className="text-xl lg:text-2xl leading-relaxed text-gray-800">
-              We are experts in principal-led real estate development, including land use, multi-family, and adaptive re-use in the San Francisco, Mid-Peninsula, and South Bay Area. We serve as a confidential partner for family offices and private clients, moving beyond traditional brokerage to directly participate in complex transactions.
+              Rooted in a legacy of principal-led real estate development, we bring deep expertise in land use, multi-family, and adaptive re-use in San Francisco, Mid-Peninsula, and South Bay Area. We operate as a confidential partner for family offices and private clients, moving beyond the traditional brokerage model to serve as direct participants in complex transactions.
             </p>
             
             <p className="text-xl lg:text-2xl leading-relaxed text-gray-800">
-              Our services range from sophisticated financial modeling, acquisition, and disposition to managing projects in the $5M - $100M range. We focus on leading discreet, off-market opportunities for individuals, family offices, and institutional capital.
+              From sophisticated financial modeling, acquisition and disposition, to managing projects in the $5M – $100M range, we lead discreet, off-market opportunities, for individuals, family offices, and institutional capital.
             </p>
           </div>
           
@@ -49,19 +49,11 @@ export default function OurTeam() {
                 
                 <div className="space-y-5 text-lg lg:text-xl text-gray-800">
                   <p>
-                    Mr. Schefsky is an alternative asset investor and portfolio manager, specializing in start-up, venture capital, secondaries, and real estate, with deep experience in real estate development, broker transactions, and leasing.
+                    Mr. Schefsky is an alternative asset investor & portfolio manager (start-up, venture capital, secondaries, and real estate) with deep experience in real estate development, broker transactions, and leasing. Mr. Schefsky brings a unique set of skills - creative architectural vision, strategic thinking, disciplined due diligence, and operations.
                   </p>
                   
                   <p>
-                    He brings a unique skill set: creative architectural vision, strategic thinking, disciplined due diligence, and operations.
-                  </p>
-                  
-                  <p>
-                    For 17 years, he operated a family office focused on commercial real estate, where he oversaw investment strategy, portfolio diversification, and project development. He has worked on major real estate and adaptive reuse redevelopment projects exceeding $20M, including creative architectural vision and entitlement.
-                  </p>
-                  
-                  <p>
-                    His work involved planning, financial strategy and assessment, leasing, and sales. He re-envisioned, financially structured, and sold through joint venture urban core buildings in excess of $33M/each.
+                    For 17 years he operated a family office derived in commercial real estate, where he oversaw investment strategy, portfolio diversification, and project development. Mr. Schefsky has worked on major real estate, adaptive reuse redevelopment projects in excess of $20M, including creative architectural vision, entitlement planning, financial strategy and assessment, leasing, and sales. He re-envisioned, financially structured, and sold through joint venture urban core buildings in excess of $33M/each.
                   </p>
                   
                   <p>
@@ -129,10 +121,15 @@ export default function OurTeam() {
             <div className="space-y-12">
               {/* John Paye */}
               <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="w-48 h-64 bg-gray-200 rounded-lg flex-shrink-0">
-                  <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    <span className="text-xs text-center px-2">John Paye photo</span>
-                  </div>
+                <div className="w-48 h-64 relative rounded-lg overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/images/john-paye.png"
+                    alt="John Paye"
+                    fill
+                    className="object-cover"
+                    quality={100}
+                    unoptimized={true}
+                  />
                 </div>
                 
                 <div className="flex-1">
@@ -164,10 +161,15 @@ export default function OurTeam() {
               
               {/* Kenneth Chin */}
               <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="w-48 h-64 bg-gray-200 rounded-lg flex-shrink-0">
-                  <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    <span className="text-xs text-center px-2">Kenneth Chin photo</span>
-                  </div>
+                <div className="w-48 h-64 relative rounded-lg overflow-hidden flex-shrink-0">
+                  <Image
+                    src="/images/kenneth-chin.png"
+                    alt="Kenneth Chin"
+                    fill
+                    className="object-cover"
+                    quality={100}
+                    unoptimized={true}
+                  />
                 </div>
                 
                 <div className="flex-1">
@@ -193,9 +195,8 @@ export default function OurTeam() {
           </div>
           
           <div className="border-t border-gray-300 pt-6">
-            <h3 className="text-sm font-semibold mb-3 text-luna-teal">Footnote on Our Team Page</h3>
             <p className="text-sm text-gray-700">
-              * Affiliated team providers are not employees or agents of NLRE. John Paye is an agent whose primary broker is Turner Real Estate CA DRE# 01174204. Ken Chin is an independent commercial real estate broker, CA DRE# ________ and performs institutional financial assessment for NLRE.
+              * Affiliated team providers are not employees or agents of New Luna Ventures, Inc. John Paye is an agent whose primary broker is Turner Real Estate CA DRE# 01174204. Ken Chin is an independent commercial real estate broker, CA DRE# ____________ and performs institutional financial assessment for NLRE.
             </p>
           </div>
         </div>

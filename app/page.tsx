@@ -38,14 +38,6 @@ export default function Home() {
                   NLRE
                 </h1>
               </div>
-              {/* Positioning Line */}
-              <p className="text-base lg:text-lg xl:text-xl text-white/85 tracking-normal mt-6 font-serif font-light max-w-2xl mx-auto">
-                Repositioning undervalued San Francisco assets with discipline and design.
-              </p>
-              {/* Soft Emotional Line */}
-              <p className="text-sm lg:text-base xl:text-lg text-white/75 tracking-normal mt-4 font-serif font-light max-w-2xl mx-auto">
-                For owners who care about what they built—and investors who see what it can become.
-              </p>
             </div>
           </div>
           
@@ -79,137 +71,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Credibility Strip */}
-        <div className="w-full bg-white border-b border-gray-200">
-          <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 py-6">
-            <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-8 text-sm lg:text-base text-gray-600 font-serif">
-              <span>Selective acquisitions</span>
-              <span className="text-gray-300">•</span>
-              <span>Principal-led</span>
-              <span className="text-gray-300">•</span>
-              <span>Long-term orientation</span>
-            </div>
-          </div>
-        </div>
-
         {/* Hero Section - Logo and Text */}
         <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 py-12 lg:py-16">
           <div className="mb-8 lg:mb-10">
             <Logo />
           </div>
           
-          <div className="max-w-3xl mb-8 space-y-4">
-            <p className="text-sm lg:text-base leading-relaxed text-gray-900 font-sans font-medium">
-              We focus on the revitalization of San Francisco's urban core.
+          <div className="max-w-3xl mb-8">
+            <p className="text-sm lg:text-base leading-relaxed text-gray-900 font-sans">
+              New Luna Real Estate is dedicated to revitalizing San Francisco's urban core (downtown financial district) by transforming it into a vibrant, inclusive, and resilient hub for living, working, and leisure. San Francisco's downtown has the potential to be one of the most vibrant business cities in the world, rivaling great cities like Manhattan, London, Paris, and Milan.
             </p>
-            <p className="text-sm lg:text-base leading-relaxed text-gray-600 font-sans">
-              NLRE is dedicated to transforming the downtown financial district into a vibrant, inclusive, and resilient hub for living, working, and leisure. San Francisco's downtown has the potential to be one of the most vibrant business cities in the world, rivaling great cities like Manhattan, London, Paris, and Milan.
-            </p>
-          </div>
-
-          {/* CTA - Discreet */}
-          <div className="max-w-3xl">
-            <a 
-              href="/connect" 
-              className="inline-block text-sm lg:text-base text-gray-900 font-serif border-b border-gray-900 pb-1 hover:border-gray-600 transition-colors"
-            >
-              Start a confidential conversation →
-            </a>
-          </div>
-        </div>
-
-        {/* Services Section - Reference Style */}
-        <div className="w-full bg-white">
-          <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 py-12 lg:py-16">
-            {/* Main Heading - Centered */}
-            <div className="text-center mb-10 lg:mb-12">
-              <p className="text-lg lg:text-xl font-serif text-gray-900 leading-relaxed">
-                Private real estate owners and institutional clients seek out our architectural vision, financial assessment, and real estate brokerage skills to address non and sub-performing assets in San Francisco's urban core. Our real estate brokerage services help our clients avoid forced sale through creative joint-venture work-outs and/or realize value through market divestiture and for investors to source and acquire adaptive re-use assets. Our brokerage services are supplemented with development services in concept design, pre-planning, and joint-venture formation.
-              </p>
-            </div>
-            
-            {/* Horizontal Line */}
-            <div className="w-full h-px bg-gray-300 mb-10 lg:mb-12"></div>
-            
-            {/* Image Section - Balance */}
-            <div className="mb-10 lg:mb-12">
-              <div className="relative w-full aspect-video bg-black overflow-hidden">
-                <Image
-                  src="/images/RealE-.png"
-                  alt="San Francisco Urban Transformation"
-                  fill
-                  className="object-cover"
-                  quality={100}
-                  unoptimized={true}
-                />
-              </div>
-            </div>
-            
-            {/* Section Title and Content */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-              {/* Section Title - Left */}
-              <div className="lg:col-span-1">
-                <h3 className="text-xl lg:text-2xl font-serif text-gray-900">
-                  Our Offerings Include:
-                </h3>
-              </div>
-              
-              {/* Content - Right */}
-              <div className="lg:col-span-2 space-y-6">
-                {/* Transaction Structuring & Negotiation */}
-                <div>
-                  <h4 className="text-lg lg:text-xl font-serif font-semibold text-gray-900 mb-3">
-                    Transaction Structuring & Negotiation
-                  </h4>
-                  <ul className="space-y-1.5 text-sm lg:text-base text-gray-700 font-sans">
-                    <li>creative re-envisioning to improve performance</li>
-                    <li>offering memoranda with creative & financial vision</li>
-                    <li>asset dispositions (on and off-market)</li>
-                    <li>fractionalized investment offerings & joint-venturing</li>
-                  </ul>
-                </div>
-                
-                {/* Project Sponsor */}
-                <div>
-                  <h4 className="text-lg lg:text-xl font-serif font-semibold text-gray-900 mb-3">
-                    Project Sponsor (syndicated investment)
-                  </h4>
-                  <ul className="space-y-1.5 text-sm lg:text-base text-gray-700 font-sans">
-                    <li>financial modeling</li>
-                    <li>partner sourcing & identification</li>
-                    <li>acquisition negotiation and structured finance</li>
-                    <li>deal closing and post-closing management</li>
-                  </ul>
-                </div>
-                
-                {/* Pre-development, Pre-planning */}
-                <div>
-                  <h4 className="text-lg lg:text-xl font-serif font-semibold text-gray-900 mb-3">
-                    Pre-development, Pre-planning
-                  </h4>
-                  <ul className="space-y-1.5 text-sm lg:text-base text-gray-700 font-sans">
-                    <li>Feasibility assessment</li>
-                    <li>engage architecture, construction management</li>
-                    <li>construction cost estimates, budget cost analysis</li>
-                    <li>pre-planning & planning entitlements</li>
-                    <li>surveys and assessments</li>
-                  </ul>
-                </div>
-                
-                {/* Development, & Project Management */}
-                <div>
-                  <h4 className="text-lg lg:text-xl font-serif font-semibold text-gray-900 mb-3">
-                    Development, & Project Management
-                  </h4>
-                  <ul className="space-y-1.5 text-sm lg:text-base text-gray-700 font-sans">
-                    <li>Assemble and manage integrated team</li>
-                    <li>conceptual design, design development, construction drawings</li>
-                    <li>construction management</li>
-                    <li>controller financial oversights</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
