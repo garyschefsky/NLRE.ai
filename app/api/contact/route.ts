@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
 
     // Email content - formatted for readability
     const emailContent = `
-New Contact Form Submission from NLRE Website
+New Contact Form Submission from nlre.ai Website
 
 PRINCIPAL REAL ESTATE OWNER INFORMATION:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

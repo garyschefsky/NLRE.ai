@@ -13,7 +13,7 @@ export default function Footer() {
             </p>
           </div>
           <p className="text-sm lg:text-base text-gray-500">
-            © 2026 New Luna Ventures Inc., d.b.a NLRE. All rights reserved.
+            © 2026 New Luna Ventures Inc., d.b.a nlre.ai. All rights reserved.
           </p>
         </div>
       </div>

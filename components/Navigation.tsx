@@ -22,10 +22,10 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo on Left */}
           <Link href="/" className="flex items-center">
-            <div className="h-14 w-auto flex-shrink-0 relative">
+            <div className="h-14 w-auto flex-shrink-0 relative -ml-1.5">
               <Image
-                src="/images/hero.png"
-                alt="NLRE Logo"
+                src="/images/nlre-logo.png"
+                alt="nlre.ai Logo"
                 width={200}
                 height={200}
                 className="h-14 w-auto object-contain"

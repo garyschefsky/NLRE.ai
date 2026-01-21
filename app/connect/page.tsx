@@ -76,10 +76,10 @@ export default function Connect() {
           <h1 className="text-3xl lg:text-4xl font-bold mb-12 text-black">Connect</h1>
           
           <div className="mb-12 space-y-6">
-            <p className="text-xl lg:text-2xl text-gray-800">
+            <p className="text-xl lg:text-2xl xl:text-[1.35rem] text-gray-800">
               We do not respond to solicitations from brokers or press.
             </p>
-            <p className="text-xl lg:text-2xl text-gray-800">
+            <p className="text-xl lg:text-2xl xl:text-[1.35rem] text-gray-800">
               If you are a principal real estate owner seeking an asset disposition, addressing an adaptive re-use project, or acquisition in urban, downtown San Francisco, we welcome your inquiry. If you are a capital market partner investor, please scroll down.
             </p>
           </div>

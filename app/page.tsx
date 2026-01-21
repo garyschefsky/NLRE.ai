@@ -1,5 +1,4 @@
 import Navigation from '@/components/Navigation'
-import Logo from '@/components/Logo'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 
@@ -33,7 +32,7 @@ export default function Home() {
           {/* Overlaid Branding - Upper Left (Sky Area) - Exact CSS Positioning */}
           <div className="heroOverlay">
             <h1 className="heroTitle">
-              NLRE
+              nlre.ai
             </h1>
             <p className="heroTagline font-serif">
               Discrete Solutions for Complex Commercial Real Estate –<br />
@@ -69,7 +68,7 @@ export default function Home() {
         {/* Hero Section - Text Only (Logo Removed) */}
         <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 py-12 lg:py-16">
           <div className="max-w-3xl mb-8">
-            <p className="text-base lg:text-lg xl:text-xl leading-relaxed text-gray-900 font-sans">
+            <p className="text-lg lg:text-xl xl:text-2xl leading-relaxed text-gray-900 font-sans">
               New Luna Real Estate is dedicated to revitalizing San Francisco's urban core (downtown financial district) by transforming it into a vibrant, inclusive, and resilient hub for living, working, and leisure. San Francisco's downtown has the potential to be one of the most vibrant business cities in the world, rivaling great cities like Manhattan, London, Paris, and Milan.
             </p>
           </div>
@@ -85,7 +84,7 @@ export default function Home() {
                 <div className="relative w-full aspect-video bg-black overflow-hidden mb-4">
                   <Image 
                     src="/images/NLRE-Image-1.png"
-                    alt="NLRE Project"
+                    alt="nlre.ai Project"
                     fill
                     className="object-cover"
                     quality={100}
@@ -107,7 +106,7 @@ export default function Home() {
                 <div className="relative w-full aspect-video bg-black overflow-hidden mb-4">
                   <Image 
                     src="/images/NLRE-Image-2.png"
-                    alt="NLRE Project"
+                    alt="nlre.ai Project"
                     fill
                     className="object-cover"
                     quality={100}
@@ -128,8 +127,8 @@ export default function Home() {
               <div className="group cursor-pointer">
                 <div className="relative w-full aspect-video bg-black overflow-hidden mb-4">
                   <Image 
-                    src="/images/RealE-2.png"
-                    alt="Real Estate Project"
+                    src="/images/RealE-.png"
+                    alt="nlre.ai Real Estate Project"
                     fill
                     className="object-cover"
                     quality={100}
@@ -151,7 +150,7 @@ export default function Home() {
                 <div className="relative w-full aspect-video bg-black overflow-hidden mb-4">
                   <Image 
                     src="/images/RealE-3.png"
-                    alt="Real Estate Project"
+                    alt="nlre.ai Real Estate Project"
                     fill
                     className="object-cover"
                     quality={100}

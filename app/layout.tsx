@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'NLRE - Real Estate Development',
+  title: 'nlre.ai - Real Estate Development',
   description: 'Revitalizing San Francisco\'s urban core through innovative real estate development',
 }
 

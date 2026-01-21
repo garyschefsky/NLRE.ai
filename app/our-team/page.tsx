@@ -24,13 +24,13 @@ export default function OurTeam() {
               <source src="/videos/Generating_Architectural_Interior_Film.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            {/* VEO Mask Overlay to Cover VEO Watermark */}
+            {/* Logo Overlay to Cover VEO Watermark */}
             <div className="absolute bottom-4 right-4 z-10">
               <Image
-                src="/images/VEO-mask.png"
-                alt=""
-                width={120}
-                height={120}
+                src="/images/nlre-logo-no-text.png"
+                alt="nlre.ai"
+                width={80}
+                height={80}
                 className="object-contain"
                 quality={100}
                 unoptimized={true}
@@ -79,19 +79,19 @@ export default function OurTeam() {
                 </h3>
                 
                 <div className="space-y-5 text-gray-800">
-                  <p>
+                  <p className="text-base">
                     Mr. Schefsky is an alternative asset investor & portfolio manager (start-up, venture capital, secondaries, and real estate) with deep experience in real estate development, broker transactions, and leasing. Mr. Schefsky brings a unique set of skills - creative architectural vision, strategic thinking, disciplined due diligence, and operations.
                   </p>
                   
-                  <p>
+                  <p className="text-base">
                     For 17 years he operated a family office derived in commercial real estate, where he oversaw investment strategy, portfolio diversification, and project development. Mr. Schefsky has worked on major real estate, adaptive reuse redevelopment projects in excess of $20M, including creative architectural vision, entitlement planning, financial strategy and assessment, leasing, and sales. He re-envisioned, financially structured, and sold through joint venture urban core buildings in excess of $33M/each.
                   </p>
                   
-                  <p>
+                  <p className="text-base">
                     Gary gives back to the community as a patron to the arts and avid art collector. He is a member of SFMOMA Photography Accessions Committee, former Board Member, Chair Strategic Directions, San Francisco Botanical Gardens & former Board of Trustees Member, Finance Committee of A+D Architecture and Design Museum, Los Angeles. He also supports educational opportunities for underserved individuals, preservation of the environment and animal species, and the advancement of humanitarian justice and social welfare through the Schefsky Foundation.
                   </p>
                   
-                  <p>
+                  <p className="text-base">
                     Mr. Schefsky holds a BA, cum laude, and Minor from the University of California, Davis, and a JD and LL.M in Transnational Business Practice from the University of the Pacific.
                   </p>
                 </div>
@@ -227,7 +227,7 @@ export default function OurTeam() {
           
           <div className="border-t border-gray-300 pt-6">
             <p className="text-sm text-gray-700">
-              * Affiliated team providers are not employees or agents of New Luna Ventures, Inc. John Paye is an agent whose primary broker is Turner Real Estate CA DRE# 01174204. Ken Chin is an independent commercial real estate broker, CA DRE# ____________ and performs institutional financial assessment for NLRE.
+              * Affiliated team providers are not employees or agents of New Luna Ventures, Inc. John Paye is an agent whose primary broker is Turner Real Estate CA DRE# 01174204. Ken Chin is an independent commercial real estate broker, CA DRE# ____________ and performs institutional financial assessment for nlre.ai.
             </p>
           </div>
         </div>

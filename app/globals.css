@@ -120,7 +120,7 @@ video::-webkit-media-controls-overlay-play-button {
   pointer-events: none; /* prevents blocking clicks */
 }
 
-/* Title (NLRE) */
+/* Title (nlre.ai) */
 .heroTitle {
   color: #fff;
   letter-spacing: 0.02em;
