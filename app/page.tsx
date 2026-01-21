@@ -127,7 +127,7 @@ export default function Home() {
               <div className="group cursor-pointer">
                 <div className="relative w-full aspect-video bg-black overflow-hidden mb-4">
                   <Image 
-                    src="/images/RealE-.png"
+                    src="/images/NLRE-Image-22.png"
                     alt="nlre.ai Real Estate Project"
                     fill
                     className="object-cover"

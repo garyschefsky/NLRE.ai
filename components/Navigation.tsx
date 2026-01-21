@@ -4,11 +4,17 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 
-const navItems = [
+type NavItem = {
+  href: string
+  label: string
+  hidden?: boolean
+}
+
+const navItems: NavItem[] = [
   { href: '/what-we-do', label: 'What We Do' },
   { href: '/our-team', label: 'Our Team' },
   { href: '/clients-we-serve', label: 'Clients We Serve' },
-  { href: '/projects', label: 'Projects/OM', hidden: true },
+  { href: '/projects', label: 'Projects/OM' },
   { href: '/connect', label: 'Connect' },
 ]
 

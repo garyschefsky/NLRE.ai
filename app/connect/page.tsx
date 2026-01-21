@@ -25,7 +25,7 @@ export default function Connect() {
               title="nlre.ai Inquiry Form"
               src="https://docs.google.com/forms/d/e/1FAIpQLSdp1zmEy3QWl-9BLgZmPkFXXpMbtb4Ak8Wycn7Upa0vznjpzw/viewform?embedded=true"
               width="100%"
-              height="1000"
+              height="1200"
               frameBorder="0"
               marginHeight={0}
               marginWidth={0}
@@ -33,9 +33,11 @@ export default function Connect() {
               style={{ 
                 border: 0,
                 display: 'block',
-                minHeight: '1000px'
+                minHeight: '1200px'
               }}
-            />
+            >
+              Loading…
+            </iframe>
           </div>
         </div>
       </main>

@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 
 export default function ClientsWeServe() {
   return (
@@ -8,7 +9,7 @@ export default function ClientsWeServe() {
       
       <main className="flex-grow">
         {/* Video at Top - Decorative Only, No Title/Caption */}
-        <div className="relative w-full overflow-hidden" style={{ height: '40vh', maxHeight: '500px', minHeight: '240px' }}>
+        <div className="relative w-full overflow-hidden bg-white" style={{ height: '40vh', maxHeight: '500px', minHeight: '240px' }}>
           <video 
             className="absolute inset-0 w-full h-full object-cover"
             autoPlay
@@ -33,8 +34,15 @@ export default function ClientsWeServe() {
             </p>
             
             <p className="text-xl lg:text-2xl xl:text-[1.35rem] leading-relaxed text-gray-800">
-              We are committed to providing <strong className="font-semibold">discreet</strong> representation that safeguards your interests while aggressively driving toward superior outcomes. Contact us for an initial consultation.
+              We are committed to providing <strong className="font-semibold">discrete</strong> representation that safeguards your interests while aggressively driving toward superior outcomes.
             </p>
+            
+            <Link 
+              href="/connect" 
+              className="inline-block mt-5 px-5 py-3 border border-gray-800 text-gray-800 no-underline font-medium rounded transition-all duration-200 hover:bg-gray-800 hover:text-white"
+            >
+              Contact us for an initial consultation.
+            </Link>
           </div>
         </div>
       </main>
