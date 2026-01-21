@@ -24,18 +24,6 @@ export default function OurTeam() {
               <source src="/videos/Generating_Architectural_Interior_Film.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            {/* Logo Overlay to Cover VEO Watermark */}
-            <div className="absolute bottom-4 right-4 z-10">
-              <Image
-                src="/images/nlre-logo-no-text.png"
-                alt="nlre.ai"
-                width={80}
-                height={80}
-                className="object-contain"
-                quality={100}
-                unoptimized={true}
-              />
-            </div>
           </div>
         </div>
         
