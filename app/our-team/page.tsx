@@ -8,7 +8,38 @@ export default function OurTeam() {
       <Navigation />
       
       <main className="flex-grow">
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 py-20 lg:py-24">
+        {/* Team Video Banner - Top of Page */}
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-12 pb-8">
+          <div className="relative w-full bg-black overflow-hidden" style={{ height: '40vh', maxHeight: '45vh', minHeight: '35vh' }}>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              webkit-playsinline="true"
+              className="w-full h-full object-cover"
+              style={{ imageRendering: 'crisp-edges', willChange: 'contents' }}
+            >
+              <source src="/videos/Generating_Architectural_Interior_Film.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            {/* VEO Mask Overlay to Cover VEO Watermark */}
+            <div className="absolute bottom-4 right-4 z-10">
+              <Image
+                src="/images/VEO-mask.png"
+                alt=""
+                width={120}
+                height={120}
+                className="object-contain"
+                quality={100}
+                unoptimized={true}
+              />
+            </div>
+          </div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-8 lg:pt-12 pb-20 lg:pb-24">
           <h1 className="text-3xl lg:text-4xl font-bold mb-12 text-black">Our Team</h1>
           
           <div className="max-w-5xl mb-16 space-y-8">
@@ -43,11 +74,11 @@ export default function OurTeam() {
               </div>
               
               <div className="flex-1">
-                <h3 className="text-2xl lg:text-3xl font-bold mb-6 text-black">
+                <h3 className="text-lg font-bold mb-3 text-black">
                   Gary J. Schefsky, J.D., LL.M., Prof. Venture Investor, & California Real Estate Broker (Corp. Broker license Number 01823306)
                 </h3>
                 
-                <div className="space-y-5 text-lg lg:text-xl text-gray-800">
+                <div className="space-y-5 text-gray-800">
                   <p>
                     Mr. Schefsky is an alternative asset investor & portfolio manager (start-up, venture capital, secondaries, and real estate) with deep experience in real estate development, broker transactions, and leasing. Mr. Schefsky brings a unique set of skills - creative architectural vision, strategic thinking, disciplined due diligence, and operations.
                   </p>

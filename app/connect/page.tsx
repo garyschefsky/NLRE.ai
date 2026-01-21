@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
-import Image from 'next/image'
 
 export default function Connect() {
   const [formData, setFormData] = useState({
@@ -17,6 +16,8 @@ export default function Connect() {
     isPrincipalOwner: '',
     capitalDeployments: '',
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -26,10 +27,44 @@ export default function Connect() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
+    setIsSubmitting(true)
+    setSubmitStatus({ type: null, message: '' })
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus({ type: 'success', message: data.message || 'Thank you for your inquiry. We will contact you soon.' })
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          cell: '',
+          portfolioType: '',
+          portfolioOther: '',
+          propertyCount: '',
+          isPrincipalOwner: '',
+          capitalDeployments: '',
+        })
+      } else {
+        setSubmitStatus({ type: 'error', message: data.message || 'There was an error submitting your form. Please try again.' })
+      }
+    } catch (error) {
+      setSubmitStatus({ type: 'error', message: 'There was an error submitting your form. Please email us directly at info@nlre.ai' })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -37,7 +72,7 @@ export default function Connect() {
       <Navigation />
       
       <main className="flex-grow">
-        <div className="max-w-5xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 py-20 lg:py-24">
+        <div className="max-w-5xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-8 lg:pt-12 pb-20 lg:pb-24">
           <h1 className="text-3xl lg:text-4xl font-bold mb-12 text-black">Connect</h1>
           
           <div className="mb-12 space-y-6">
@@ -49,23 +84,16 @@ export default function Connect() {
             </p>
           </div>
 
-          {/* Visual Content - Video */}
-          <div className="mb-12">
-            <div className="relative w-full aspect-video bg-black overflow-hidden">
-              <video 
-                className="w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="auto"
-                webkit-playsinline="true"
-              >
-                <source src="/videos/Generating_Architectural_Interior_Film.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+          {/* Status Message */}
+          {submitStatus.type && (
+            <div className={`mb-8 p-4 rounded ${
+              submitStatus.type === 'success' 
+                ? 'bg-green-50 text-green-800 border border-green-200' 
+                : 'bg-red-50 text-red-800 border border-red-200'
+            }`}>
+              {submitStatus.message}
             </div>
-          </div>
+          )}
           
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Principal Owner Section */}
@@ -73,63 +101,66 @@ export default function Connect() {
               <h2 className="text-2xl lg:text-3xl font-bold text-black">Principal Real Estate Owner Information</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="firstName" className="block text-base lg:text-lg font-medium text-gray-700 mb-3">
-                  First Name:
-                </label>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  className="w-full border-b-2 border-gray-300 focus:border-black focus:outline-none py-3 text-lg"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="lastName" className="block text-base lg:text-lg font-medium text-gray-700 mb-3">
-                  Last Name:
-                </label>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  className="w-full border-b-2 border-gray-300 focus:border-black focus:outline-none py-3 text-lg"
-                />
-              </div>
+                <div>
+                  <label htmlFor="firstName" className="block text-base lg:text-lg font-medium text-gray-700 mb-3">
+                    First Name:
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                    className="w-full border-b-2 border-gray-300 focus:border-black focus:outline-none py-3 text-lg"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="lastName" className="block text-base lg:text-lg font-medium text-gray-700 mb-3">
+                    Last Name:
+                  </label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                    className="w-full border-b-2 border-gray-300 focus:border-black focus:outline-none py-3 text-lg"
+                  />
+                </div>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="email" className="block text-base lg:text-lg font-medium text-gray-700 mb-3">
-                  Email:
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full border-b-2 border-gray-300 focus:border-black focus:outline-none py-3 text-lg"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="cell" className="block text-base lg:text-lg font-medium text-gray-700 mb-3">
-                  Cell:
-                </label>
-                <input
-                  type="tel"
-                  id="cell"
-                  name="cell"
-                  value={formData.cell}
-                  onChange={handleChange}
-                  className="w-full border-b-2 border-gray-300 focus:border-black focus:outline-none py-3 text-lg"
-                />
-              </div>
+                <div>
+                  <label htmlFor="email" className="block text-base lg:text-lg font-medium text-gray-700 mb-3">
+                    Email:
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full border-b-2 border-gray-300 focus:border-black focus:outline-none py-3 text-lg"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="cell" className="block text-base lg:text-lg font-medium text-gray-700 mb-3">
+                    Cell:
+                  </label>
+                  <input
+                    type="tel"
+                    id="cell"
+                    name="cell"
+                    value={formData.cell}
+                    onChange={handleChange}
+                    className="w-full border-b-2 border-gray-300 focus:border-black focus:outline-none py-3 text-lg"
+                  />
+                </div>
               </div>
               
               <div>
@@ -172,30 +203,6 @@ export default function Connect() {
                   value={formData.propertyCount}
                   onChange={handleChange}
                   className="w-full border-b-2 border-gray-300 focus:border-black focus:outline-none py-3 text-lg"
-                />
-              </div>
-            </div>
-            
-            {/* Visual Content - Images Between Sections */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12 border-t border-gray-300 pt-12">
-              <div className="relative w-full aspect-video bg-black overflow-hidden">
-                <Image
-                  src="/images/RealE-2.png"
-                  alt="Real Estate Development"
-                  fill
-                  className="object-cover"
-                  quality={100}
-                  unoptimized={true}
-                />
-              </div>
-              <div className="relative w-full aspect-video bg-black overflow-hidden">
-                <Image
-                  src="/images/RealE-3.png"
-                  alt="Architectural Design"
-                  fill
-                  className="object-cover"
-                  quality={100}
-                  unoptimized={true}
                 />
               </div>
             </div>
@@ -301,9 +308,10 @@ export default function Connect() {
             <div className="pt-8">
               <button
                 type="submit"
-                className="bg-luna-teal text-white px-12 py-4 text-lg font-medium hover:bg-teal-600 transition-colors"
+                disabled={isSubmitting}
+                className="bg-gray-900 text-white px-12 py-4 text-lg font-medium hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send
+                {isSubmitting ? 'Sending...' : 'Send'}
               </button>
             </div>
           </form>

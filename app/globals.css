@@ -93,3 +93,68 @@ video::-webkit-media-controls-fullscreen-button {
 video::-webkit-media-controls-overlay-play-button {
   display: none !important;
 }
+
+/* Hero Overlay Positioning - Exact CSS per Gary's specs */
+.hero {
+  position: relative;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Remove any potential line under hero video */
+.hero video {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Overlay container */
+.heroOverlay {
+  position: absolute;
+  left: 8%;
+  top: 18%;
+  max-width: 42%;
+  z-index: 3;
+  text-align: left;
+  pointer-events: none; /* prevents blocking clicks */
+}
+
+/* Title (NLRE) */
+.heroTitle {
+  color: #fff;
+  letter-spacing: 0.02em;
+  line-height: 1.0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: clamp(48px, 5.6vw, 96px);
+  font-weight: 600;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.35);
+}
+
+/* Tagline */
+.heroTagline {
+  color: rgba(255,255,255,0.90);
+  margin-top: 10px;
+  line-height: 1.25;
+  max-width: 34ch; /* screenshot-friendly line length */
+  font-size: clamp(14px, 1.25vw, 18px);
+  font-weight: 400;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.35);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .heroOverlay {
+    left: 6%;
+    top: 14%;
+    max-width: 88%;
+  }
+  .heroTitle {
+    font-size: clamp(36px, 9vw, 52px);
+  }
+  .heroTagline {
+    font-size: clamp(13px, 3.6vw, 16px);
+    max-width: 42ch;
+  }
+}

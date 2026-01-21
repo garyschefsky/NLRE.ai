@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Image from 'next/image'
 
 export default function ClientsWeServe() {
   return (
@@ -7,7 +8,21 @@ export default function ClientsWeServe() {
       <Navigation />
       
       <main className="flex-grow">
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 py-20 lg:py-24">
+        {/* Hero Image at Top - Decorative Only, No Title/Caption */}
+        <div className="w-full bg-black overflow-hidden">
+          <div className="relative w-full aspect-video bg-black">
+            <Image 
+              src="/images/NLRE-Image-1.png"
+              alt=""
+              fill
+              className="object-cover"
+              quality={100}
+              unoptimized={true}
+            />
+          </div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-8 lg:pt-12 pb-20 lg:pb-24">
           <h1 className="text-3xl lg:text-4xl font-bold mb-12 text-black">Clients We Serve</h1>
           
           <div className="max-w-5xl space-y-8">
