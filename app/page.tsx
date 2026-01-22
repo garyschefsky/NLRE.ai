@@ -74,13 +74,41 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Sports-Oriented Visual Section - Two-Panel Diptych */}
+        <div className="w-full bg-white py-12 lg:py-16">
+          <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+              <div className="relative w-full aspect-[4/3] bg-black overflow-hidden">
+                <Image
+                  src="/images/Sport-1.png"
+                  alt=""
+                  fill
+                  className="object-cover"
+                  quality={100}
+                  unoptimized={true}
+                />
+              </div>
+              <div className="relative w-full aspect-[4/3] bg-black overflow-hidden">
+                <Image
+                  src="/images/Sport-2.png"
+                  alt=""
+                  fill
+                  className="object-cover"
+                  quality={100}
+                  unoptimized={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Portfolio Gallery - Four Static Images */}
         <div className="w-full bg-white">
           <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 py-16 lg:py-20">
             {/* Four Image Grid - Equal Dimensions and Visual Weight */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
               {/* Image 1 - Upper Left (Still Image - Brick + Glass) */}
-              <div className="group cursor-pointer">
+              <div>
                 <div className="relative w-full aspect-video bg-black overflow-hidden mb-4">
                   <Image 
                     src="/images/NLRE-Image-1.png"
@@ -102,7 +130,7 @@ export default function Home() {
               </div>
               
               {/* Image 2 - Upper Right */}
-              <div className="group cursor-pointer">
+              <div>
                 <div className="relative w-full aspect-video bg-black overflow-hidden mb-4">
                   <Image 
                     src="/images/NLRE-Image-2.png"
@@ -124,7 +152,7 @@ export default function Home() {
               </div>
               
               {/* Image 3 - Lower Left */}
-              <div className="group cursor-pointer">
+              <div>
                 <div className="relative w-full aspect-video bg-black overflow-hidden mb-4">
                   <Image 
                     src="/images/NLRE-Image-22.png"
@@ -146,7 +174,7 @@ export default function Home() {
               </div>
               
               {/* Image 4 - Lower Right */}
-              <div className="group cursor-pointer">
+              <div>
                 <div className="relative w-full aspect-video bg-black overflow-hidden mb-4">
                   <Image 
                     src="/images/RealE-3.png"

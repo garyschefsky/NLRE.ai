@@ -21,7 +21,7 @@ export default function OurTeam() {
               className="w-full h-full object-cover"
               style={{ imageRendering: 'crisp-edges', willChange: 'contents' }}
             >
-              <source src="/videos/Generating_Architectural_Interior_Film.mp4" type="video/mp4" />
+              <source src="/videos/NLRE-Workspace.m4v" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
