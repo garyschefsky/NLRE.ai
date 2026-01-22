@@ -27,7 +27,7 @@ export default function OurTeam() {
           </div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-8 lg:pt-12 pb-20 lg:pb-24">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-4 lg:pt-6 pb-20 lg:pb-24">
           <h1 className="text-3xl lg:text-4xl font-bold mb-12 text-black">Our Team</h1>
           
           <div className="max-w-5xl mb-16 space-y-8">

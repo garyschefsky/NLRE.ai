@@ -66,10 +66,16 @@ export default function Home() {
         </div>
 
         {/* Hero Section - Text Only (Logo Removed) */}
-        <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 py-12 lg:py-16">
-          <div className="max-w-3xl mb-8">
-            <p className="text-lg lg:text-xl xl:text-2xl leading-relaxed text-gray-900 font-sans">
-              New Luna Real Estate is dedicated to revitalizing San Francisco's urban core (downtown financial district) by transforming it into a vibrant, inclusive, and resilient hub for living, working, and leisure. San Francisco's downtown has the potential to be one of the most vibrant business cities in the world, rivaling great cities like Manhattan, London, Paris, and Milan.
+        <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-10 pb-16">
+          <div className="max-w-3xl mx-auto text-center mb-8">
+            <p className="text-lg lg:text-xl xl:text-2xl leading-normal text-gray-900 font-sans mb-4">
+              NLRE.AI brings a unique blend of creative architectural vision, innovative design principles, and financial expertise to address San Francisco's urban core commercial real estate.
+            </p>
+            <p className="text-lg lg:text-xl xl:text-2xl leading-normal text-gray-900 font-sans mb-4">
+              We provide commercial brokerage and financial strategy to owners and acquirers of historic downtown real estate in the $5M–$100M range. We spearhead the revitalization of non-performing commercial assets into vibrant, high-value properties with favorable outcomes.
+            </p>
+            <p className="text-lg lg:text-xl xl:text-2xl leading-normal text-gray-900 font-sans">
+              Our forward-thinking team blends architectural and design principles with deep expertise in sophisticated financial modeling, structured finance, & commercial brokerage.
             </p>
           </div>
         </div>

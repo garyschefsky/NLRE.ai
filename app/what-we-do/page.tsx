@@ -15,8 +15,16 @@ export default function WhatWeDo() {
           <h1 className="text-3xl lg:text-4xl font-bold mb-12 text-black">What We Do</h1>
           
           <div className="max-w-5xl mb-16">
+            <p className="text-xl lg:text-2xl xl:text-[1.35rem] leading-relaxed text-gray-800 mb-6">
+              Private real estate owners and institutional clients seek out our architectural vision, financial assessment, and real estate brokerage skills to address non and sub-performing assets in San Francisco's urban core.
+            </p>
+            
+            <p className="text-xl lg:text-2xl xl:text-[1.35rem] leading-relaxed text-gray-800 mb-6">
+              Our real estate brokerage services help our clients avoid forced sale through creative joint-venture work-outs. We also assist clients realize value through market divestiture and investors source and acquire potential adaptive re-use assets.
+            </p>
+            
             <p className="text-xl lg:text-2xl xl:text-[1.35rem] leading-relaxed text-gray-800 mb-8">
-              Private real estate owners and institutional clients seek out our architectural vision, financial assessment, and real estate brokerage skills to address non and sub-performing assets in San Francisco's urban core. Our real estate brokerage services help our clients avoid forced sale through creative joint-venture work-outs and/or realize value through market divestiture and for investors to source and acquire adaptive re-use assets. Our brokerage services are supplemented with development services in concept design, pre-planning, and joint-venture formation.
+              Our brokerage services are supplemented with development services in concept design, pre-planning, and joint-venture formation.
             </p>
             
             <h2 className="text-2xl lg:text-3xl font-bold mb-8 text-black">Our Offerings Include:</h2>
