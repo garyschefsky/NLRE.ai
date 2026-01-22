@@ -50,7 +50,7 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-xs lg:text-sm font-serif transition-colors ${
+                  className={`text-sm lg:text-base font-serif transition-colors ${
                     isActive
                       ? 'text-gray-900 border-b border-gray-900 pb-1'
                       : 'text-gray-600 hover:text-gray-900'

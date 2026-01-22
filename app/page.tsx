@@ -66,8 +66,8 @@ export default function Home() {
         </div>
 
         {/* Hero Section - Text Only (Logo Removed) */}
-        <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-10 pb-16">
-          <div className="max-w-3xl mx-auto text-center mb-8">
+        <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-10 pb-8">
+          <div className="max-w-3xl mx-auto text-left mb-6">
             <p className="text-lg lg:text-xl xl:text-2xl leading-normal text-gray-900 font-sans mb-4">
               NLRE.AI brings a unique blend of creative architectural vision, innovative design principles, and financial expertise to address San Francisco's urban core commercial real estate.
             </p>
@@ -105,6 +105,7 @@ export default function Home() {
                 />
               </div>
             </div>
+            <p className="text-xs text-gray-400 text-center mt-2">(ai generated © nlre.ai)</p>
           </div>
         </div>
 
