@@ -76,8 +76,8 @@ export default function Home() {
 
         {/* Sports-Oriented Visual Section - Two-Panel Diptych */}
         <div className="w-full bg-white py-12 lg:py-16">
-          <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+          <div className="max-w-5xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               <div className="relative w-full aspect-[4/3] bg-black overflow-hidden">
                 <Image
                   src="/images/Sport-1.png"
