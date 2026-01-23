@@ -6,14 +6,6 @@ export default function Footer() {
           <div className="text-sm lg:text-base text-gray-700 space-y-1">
             <p className="font-medium">580 California Street, 12th Floor</p>
             <p className="text-gray-600">San Francisco, CA 94104</p>
-            <p className="pt-1">
-              <a 
-                href="mailto:info@nlre.ai" 
-                className="text-gray-900 hover:text-gray-700 transition-colors font-medium border-b border-gray-300 hover:border-gray-500 pb-1"
-              >
-                info@nlre.ai
-              </a>
-            </p>
           </div>
           <div className="pt-2 border-t border-gray-200">
             <p className="text-xs lg:text-sm text-gray-500 font-light tracking-wide">

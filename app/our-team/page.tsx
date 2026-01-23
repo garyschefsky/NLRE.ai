@@ -26,6 +26,9 @@ export default function OurTeam() {
             </video>
           </div>
           <p className="text-xs text-gray-400 text-center mt-2">(ai generated © nlre.ai)</p>
+          <p className="text-sm text-gray-700 text-center mt-4">
+            Affiliated team providers are not employees or agents of New Luna Ventures, Inc. John Paye is an agent whose primary broker is Turner Real Estate CA DRE# 01174204.
+          </p>
         </div>
         
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-8 lg:pt-12 pb-20 lg:pb-24">
@@ -64,7 +67,7 @@ export default function OurTeam() {
               
               <div className="flex-1">
                 <h3 className="text-lg font-bold mb-3 text-black">
-                  Gary J. Schefsky, J.D., LL.M., Prof. Venture Investor, & California Real Estate Broker (Corp. Broker license Number 01823306)
+                  Gary J. Schefsky, J.D., LL.M., Prof. Venture Investor, & California Real Estate Broker. Managing, Principal Broker. (Corp. Broker License Number 01823306).
                 </h3>
                 
                 <div className="space-y-5 text-gray-800">
@@ -154,7 +157,7 @@ export default function OurTeam() {
                 
                 <div className="flex-1">
                   <h4 className="text-lg font-bold mb-3 text-black">
-                    John Paye - (DRE LICENSE NUMBER 01174204)
+                    John Paye
                   </h4>
                   <p className="text-gray-800 mb-4">
                     John Paye is our team builder to capital investors, joint-venture partners for commercial real estate projects, and he leads residential real estate transactions through his principal broker, Turner Real Estate.
@@ -179,46 +182,9 @@ export default function OurTeam() {
                 </div>
               </div>
               
-              {/* Kenneth Chin */}
-              <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="w-48 h-64 relative rounded-lg overflow-hidden flex-shrink-0">
-                  <Image
-                    src="/images/kenneth-chin.png"
-                    alt="Kenneth Chin"
-                    fill
-                    className="object-cover"
-                    quality={100}
-                    unoptimized={true}
-                  />
-                </div>
-                
-                <div className="flex-1">
-                  <h4 className="text-lg font-bold mb-3 text-black">Financial Assessment & Capital Markets</h4>
-                  <h5 className="text-lg font-semibold mb-3 text-black">
-                    Kenneth Chin - (DRE License Number ______)
-                  </h5>
-                  <p className="text-gray-800 mb-4">
-                    Kenneth Chin is the CEO and founder of Terranado, a real estate advisory firm. Terranado provides strategy, development management, construction, project management, and financial structuring. Clients include institutional owners, developers, private family offices, and private real estate owners.
-                  </p>
-                  <p className="text-gray-800 mb-4">
-                    Mr. Chin previously served as a Vice President with United Growth, where he focused on managing single and multi-tenant retail development projects from acquisition through development. He served as a Project Manager for an 80-acre master-planned mixed-use office, residential, and retail development for a private Bay Area real estate developer, and managed the redevelopment of a 90,000 sq. ft. office building in Silicon Valley for another owner.
-                  </p>
-                  <p className="text-gray-800 mb-4">
-                    Mr. Chin also worked with a private entrepreneurial real estate merchant banking firm where he led the sourcing, structuring, and underwriting of various master-planned and mixed-use developments. At GMAC Commercial Mortgage (now CapMark), he completed over $500 million in transactions involving structuring, underwriting, and asset management of lodging assets.
-                  </p>
-                  <p className="text-gray-800 mb-4">
-                    Mr. Chin holds an active California real estate broker's license and is an active member of the Urban Land Institute (ULI) and the International Council of Shopping Centers (ICSC). He holds a Masters in Real Estate Development from the University of Southern California and degrees from the University of Pennsylvania: a B.S. in Economics from Wharton and a B.S.E. in Mechanical Engineering.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
           
-          <div className="border-t border-gray-300 pt-6">
-            <p className="text-sm text-gray-700">
-              * Affiliated team providers are not employees or agents of New Luna Ventures, Inc. John Paye is an agent whose primary broker is Turner Real Estate CA DRE# 01174204. Ken Chin is an independent commercial real estate broker, CA DRE# ____________ and performs institutional financial assessment for nlre.ai.
-            </p>
-          </div>
         </div>
       </main>
       
