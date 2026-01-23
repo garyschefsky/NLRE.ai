@@ -9,7 +9,7 @@ export default function OurTeam() {
       
       <main className="flex-grow">
         {/* Team Video Banner - Top of Page */}
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-12 pb-8">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pb-8">
           <div className="relative w-full bg-black overflow-hidden" style={{ height: '40vh', maxHeight: '45vh', minHeight: '35vh' }}>
             <video
               autoPlay

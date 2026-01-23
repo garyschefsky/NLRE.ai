@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'nlre.ai - Real Estate Development',
-  description: 'Revitalizing San Francisco\'s urban core through innovative real estate development',
+  title: 'nlre.ai - Commercial Real Estate',
+  description: 'Revitalizing San Francisco\'s urban core through innovative commercial real estate brokerage and development',
 }
 
 export default function RootLayout({
