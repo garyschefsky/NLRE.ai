@@ -26,9 +26,6 @@ export default function OurTeam() {
             </video>
           </div>
           <p className="text-xs text-gray-400 text-center mt-2">(ai generated © nlre.ai)</p>
-          <p className="text-sm text-gray-700 text-center mt-4">
-            Affiliated team providers are not employees or agents of New Luna Ventures, Inc. John Paye is an agent whose primary broker is Turner Real Estate CA DRE# 01174204.
-          </p>
         </div>
         
         <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 pt-8 lg:pt-12 pb-20 lg:pb-24">
@@ -185,6 +182,11 @@ export default function OurTeam() {
             </div>
           </div>
           
+          <div className="border-t border-gray-300 pt-6">
+            <p className="text-sm text-gray-700">
+              Affiliated team providers are not employees or agents of New Luna Ventures, Inc. John Paye is an agent whose primary broker is Turner Real Estate CA DRE# 01174204.
+            </p>
+          </div>
         </div>
       </main>
       
