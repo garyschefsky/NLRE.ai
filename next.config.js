@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   // Standalone output for maximum portability (works on any Node.js host)
-  // Force production deployment
   output: 'standalone',
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -15,4 +14,3 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-// Vercel auto-deploy test Fri Jan 23 23:06:42 EST 2026

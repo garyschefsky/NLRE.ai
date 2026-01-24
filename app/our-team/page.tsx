@@ -162,7 +162,6 @@ export default function OurTeam() {
                   <p className="text-gray-800 mb-4">
                     John is an exemplar of championship performance in the real estate business and as a former professional athlete.
                   </p>
-                  {/* Updated bio text */}
                   <ul className="list-disc list-inside space-y-1 text-gray-800">
                     <li>San Francisco 49ers Super Bowl XXIII Champion Ring Holder</li>
                     <li>Stanford Football Hall of Fame member</li>
