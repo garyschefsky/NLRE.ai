@@ -15,3 +15,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+// Vercel auto-deploy test Fri Jan 23 23:06:42 EST 2026
