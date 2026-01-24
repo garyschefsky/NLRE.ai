@@ -41,7 +41,7 @@ export default function OurTeam() {
             </p>
             
             <p className="text-xl lg:text-2xl leading-relaxed text-gray-800">
-              From sophisticated financial modeling, acquisition and disposition, to managing projects in the $5M – $100M range, we lead discreet, off-market opportunities, for individuals, family offices, and institutional capital.
+              From sophisticated financial modeling, acquisition and disposition, to managing projects in the $5M – $100M range, we lead discrete, off-market opportunities, for individuals, family offices, and institutional capital.
             </p>
           </div>
           
