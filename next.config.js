@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   // Standalone output for maximum portability (works on any Node.js host)
+  // Force production deployment
   output: 'standalone',
   images: {
     formats: ['image/avif', 'image/webp'],
