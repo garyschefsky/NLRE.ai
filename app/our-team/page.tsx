@@ -160,7 +160,7 @@ export default function OurTeam() {
                     John Paye is our team builder to capital investors, joint-venture partners for commercial real estate projects, and he leads residential real estate transactions through his principal broker, Turner Real Estate.
                   </p>
                   <p className="text-gray-800 mb-4">
-                    His championship performance in the real estate business and as a former professional athlete:
+                    John is an exemplar of championship performance in the real estate business and as a former professional athlete.
                   </p>
                   <ul className="list-disc list-inside space-y-1 text-gray-800">
                     <li>San Francisco 49ers Super Bowl XXIII Champion Ring Holder</li>

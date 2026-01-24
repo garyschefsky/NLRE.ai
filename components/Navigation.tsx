@@ -27,8 +27,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo on Left */}
-          <Link href="/" className="flex items-center">
-            <div className="h-14 w-auto flex-shrink-0 relative -ml-1.5">
+          <Link href="/" className="flex items-center z-10 flex-shrink-0">
+            <div className="h-14 w-auto flex-shrink-0 relative -ml-1.5 bg-white pr-2">
               <Image
                 src="/images/nlre-logo.png"
                 alt="nlre.ai Logo"
@@ -43,7 +43,7 @@ export default function Navigation() {
           </Link>
           
           {/* Navigation Links on Right */}
-          <div className="flex space-x-6 lg:space-x-8">
+          <div className="flex space-x-3 sm:space-x-6 lg:space-x-8 overflow-hidden flex-shrink min-w-0 items-center">
             {navItems.filter(item => !item.hidden).map((item) => {
               const isActive = pathname === item.href
               return (
