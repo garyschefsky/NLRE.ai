@@ -134,59 +134,6 @@ export default function OurTeam() {
             </div>
           </div>
           
-          <div className="mb-16">
-            <h2 className="text-xl font-bold mb-6 text-black">Affiliated Team*</h2>
-            <h3 className="text-lg font-semibold mb-8 text-gray-700">Business Development & Capital Market Partners</h3>
-            
-            <div className="space-y-12">
-              {/* John Paye */}
-              <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="w-48 h-64 relative rounded-lg overflow-hidden flex-shrink-0">
-                  <Image
-                    src="/images/john-paye.png"
-                    alt="John Paye"
-                    fill
-                    className="object-cover"
-                    quality={100}
-                    unoptimized={true}
-                  />
-                </div>
-                
-                <div className="flex-1">
-                  <h4 className="text-lg font-bold mb-3 text-black">
-                    John Paye
-                  </h4>
-                  <p className="text-gray-800 mb-4">
-                    John Paye is our team builder to capital investors, joint-venture partners for commercial real estate projects, and he leads residential real estate transactions through his principal broker, Turner Real Estate.
-                  </p>
-                  <p className="text-gray-800 mb-4">
-                    John is an exemplar of championship performance in the real estate business and as a former professional athlete.
-                  </p>
-                  <ul className="list-disc list-inside space-y-1 text-gray-800">
-                    <li>San Francisco 49ers Super Bowl XXIII Champion Ring Holder</li>
-                    <li>Stanford Football Hall of Fame member</li>
-                    <li>Stanford Basketball Hall of Fame member</li>
-                  </ul>
-                  <p className="text-gray-800 mt-4">
-                    John's career transitioned from professional sports to real estate land development, focusing on high-end home redevelopment projects. He currently represents buyers and sellers of residential real estate in the mid-Peninsula.
-                  </p>
-                  <p className="text-gray-800 mt-4">
-                    Having lived long-term in Atherton, Menlo Park, Stanford, and Woodside, John has a deep understanding of the mid-Peninsula residential market and specific neighborhoods. He guides clients through complex real estate processes with a "calm quarterback" demeanor.
-                  </p>
-                  <p className="text-gray-800 mt-4">
-                    John gives back to the community by coaching Menlo Atherton College Women's Basketball and serving as President of the NFL Alumni Nor-Cal Chapter. He is the Founder of the Inside Anne's Closet Colon Cancer Awareness Initiative and supports the developmentally disabled, stemming from being the father of a developmentally disabled son.
-                  </p>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-300 pt-6">
-            <p className="text-sm text-gray-700">
-              Affiliated team providers are not employees or agents of New Luna Ventures, Inc. John Paye is an agent whose primary broker is Turner Real Estate CA DRE# 01174204.
-            </p>
-          </div>
         </div>
       </main>
       

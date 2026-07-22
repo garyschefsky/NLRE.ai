@@ -14,7 +14,6 @@ All images should be placed in the `/public/images/` directory.
 
 ### Team Photos
 - **Gary J. Schefsky**: `/public/images/team-gary.jpg`
-- **John Paye**: `/public/images/team-john.jpg`
 - **Kenneth Chin**: `/public/images/team-kenneth.jpg`
 - **Specs**: Professional headshots, recommended 256x320px (portrait orientation)
 
