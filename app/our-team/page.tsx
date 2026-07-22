@@ -134,12 +134,6 @@ export default function OurTeam() {
             </div>
           </div>
 
-          <div className="border-t border-gray-300 pt-6">
-            <p className="text-sm text-gray-700">
-              John Paye is an agent whose primary broker is Turner Real Estate CA DRE# 01174204.
-            </p>
-          </div>
-          
         </div>
       </main>
       
